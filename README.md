@@ -1,6 +1,11 @@
 Simple Dynamic Strings
 ===
 
+**Fork of [antirez's `sds` library](https://github.com/antirez/sds) with
+Windows support and a CMake build.**
+
+---
+
 **Notes about verison 2**: this is an updated version of SDS in an attempt
 to finally unify Redis, Disque, Hiredis, and the stand alone SDS versions.
 This version is **NOT* binary compatible** with SDS verison 1, but the API
