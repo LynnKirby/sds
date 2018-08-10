@@ -1,6 +1,9 @@
 Simple Dynamic Strings
 ===
 
+![Linux Build](https://img.shields.io/travis/com/LynnKirby/sds.svg?label=Linux)
+![Windows Build](https://img.shields.io/appveyor/ci/LynnKirby/sds.svg?label=Windows)
+
 **Fork of [antirez's `sds` library](https://github.com/antirez/sds) with
 Windows support and a CMake build.**
 
