@@ -1,0 +1,23 @@
+strategy:
+  matrix:
+    linux:
+      imageName: 'ubuntu-16.04'
+      generator: 'Unix Makefiles'
+      testfile: 'sds-test'
+    mac:
+      imageName: 'macos-10.13'
+      generator: 'Xcode'
+      testfile: 'sds-test'
+    windows:
+      imageName: 'vs2017-win2016'
+      generator: 'Visual Studio 15 2017 Win64'
+      testfile: 'Debug/sds-test.exe'
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+- task: CMake@1
+
+- script: |
+    $(Build.SourcesDirectory)/build/$(testfile)
